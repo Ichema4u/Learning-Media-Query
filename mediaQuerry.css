@@ -1,0 +1,120 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Inter", sans-serif, Arial, Helvetica;
+  letter-spacing: -0.5px;
+}
+
+/* Desktop View */
+.main-container {
+  width: 100%;
+  height: 100vh;
+  background-color: antiquewhite;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: start;
+  padding: 5rem 7rem;
+}
+.box {
+  width: 32%;
+  height: auto;
+  background-color: yellowgreen;
+  border-radius: 0.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: start;
+  padding: 1rem;
+  row-gap: 1.5rem;
+}
+.top-card-section {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.top-card-section h1 {
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+.bottom-card-section {
+  width: 100%;
+  height: auto;
+}
+.bottom-card-section button {
+  width: 100%;
+  height: 100%;
+  width: 100%;
+  height: auto;
+  background-color: brown;
+  color: white;
+  outline: none;
+  border: none;
+  font-size: 1.1rem;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+/* Tablet View */
+@media screen and (max-width: 1140px) {
+  .main-container {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: start;
+    padding: 3rem 1.5rem;
+    flex-wrap: wrap;
+    row-gap: 1.5rem;
+  }
+  .box {
+    width: 100%;
+    height: auto;
+    background-color: rgb(32, 32, 31);
+    color: wheat;
+    border-radius: 0.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+    padding: 1rem;
+    row-gap: 1.5rem;
+  }
+}
+
+/* Mobile View */
+@media screen and (max-width: 480px) {
+  .main-container {
+    width: 100%;
+    height: 100vh;
+    background-color: antiquewhite;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: start;
+    padding: 3rem 1.5rem;
+    flex-wrap: wrap;
+    row-gap: 1.5rem;
+  }
+  .box {
+    width: 100%;
+    height: auto;
+    background-color: yellowgreen;
+    color: black;
+    border-radius: 0.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+    padding: 1rem;
+    row-gap: 1.5rem;
+  }
+}
